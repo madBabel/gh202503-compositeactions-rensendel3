@@ -17,10 +17,10 @@ jobs:
         uses: ./.github/actions/composite-cache-deps
         with:
           node-version: '20.x'
-          working-dir: './aplicaciones/aplicaciones'
+          working-dir: './.github/aplicaciones/aplicaciones'
 
       - name: Build React app
         run: npm run build
-        working-directory: ./aplicaciones/aplicaciones
+        working-directory: ./.github/aplicaciones/aplicaciones
 
       # Añade aquí otros pasos como pruebas, despliegue, etc.
